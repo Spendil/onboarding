@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="survey survey-wrapper" style="--part: 4">
+		<div class="survey-header">
+			<div class="survey-header-count">
+				<span class="survey-header-count-current">4</span>
+				<span class="survey-header-count-total">/5</span>
+			</div>
+			<div class="survey-header-title">
+				Goals and data requirements
+			</div>
+		</div>
+		<div class="survey-body">
+			<fieldset class="survey-body-item">
+				<legend>What type of data you are looking for?</legend>
+				<div class="survey-body-item-tokenlist">
+					<div class="onboarding-checkbox survey-body-item-token">
+						<input
+							type="checkbox"
+							id="Real time data"
+							name="Real time data"
+							value="Real time data" />
+						<label for="Real time data">Real time data</label>
+					</div>
+					<div class="onboarding-checkbox survey-body-item-token">
+						<input
+							type="checkbox"
+							id="Historical data"
+							name="Historical data"
+							value="Historical data" />
+						<label for="Historical data">Historical data</label>
+					</div>
+					<div class="onboarding-checkbox survey-body-item-token">
+						<input
+							type="checkbox"
+							id="Combined"
+							name="Combined"
+							value="Combined" />
+						<label for="Combined">Combined</label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="onboarding-input survey-body-item survey-body-item-client-name">
+				<label htmlFor="usecase">What do you want to accomplish with Bitquery (use case)?*</label>
+				<input type="text" id='usecase' placeholder='Write your use case...' />
+			</div>
+		</div>
+		<div class="survey-footer survey-footer-multi">
+			<a href='/survey3.html' class="signup-button survey-footer-button-back">Back</a>
+			<a href='/survey5.html' class="signup-button survey-footer-button-continue">Continue</a>
+		</div>
+	</div>
+	<script type="module" src="/main.js"></script>
+</body>
+</html>

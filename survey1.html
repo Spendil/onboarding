@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="survey survey-wrapper" style="--part: 1">
+		<div class="survey-header">
+			<div class="survey-header-count">
+				<span class="survey-header-count-current">1</span>
+				<span class="survey-header-count-total">/5</span>
+			</div>
+			<div class="survey-header-title">
+				Let’s set up your Bitquery account
+			</div>
+			<div class="survey-header-description">
+				Tell us more about yourself so that we can provide you a personalized experience
+			</div>
+		</div>
+		<div class="survey-body">
+			<div class="onboarding-input survey-body-item survey-body-item-client-name">
+				<label htmlFor="name-input">Your name*</label>
+				<input type="text" id='name-input' placeholder='What should we call you?' autoFocus />
+			</div>
+			<div class="onboarding-input survey-body-item survey-body-item-company-name">
+				<label htmlFor="company-name-input">Name of your company*</label>
+				<input type="text" id='company-name-input' placeholder='Enter your company’s name'/>
+			</div>
+			<div class="onboarding-input survey-body-item survey-body-item-company-size">
+				<label htmlFor="company-size-selector">How big is your company?</label>
+				<select name="company-size" id="company-size-selector" class='onboarding-select'>
+					<option value="" disabled selected hidden>Choose your team size...</option>
+					<option value="1">2-5</option>
+					<option value="2">5-10</option>
+					<option value="3">10-100</option>
+					<option value="4">100+</option>
+				</select>
+			</div>
+			<fieldset class="survey-body-item survey-body-item-accept-email">
+				<legend>Do you want marketing emails from Bitquery?</legend>
+				<div class="radio-button">
+					<input
+						type="radio"
+						id="yes-email"
+						name="email"
+						value="yes-email" />
+					<span class='radio-after'></span>
+					<label for="yes-email">Yes, I need product information</label>
+				</div>
+				<div class="radio-button">
+					<input
+						type="radio"
+						id="no-email"
+						name="email"
+						value="no-email" />
+					<span class='radio-after'></span>
+					<label for="no-email">No, I will explore on my own</label>
+				</div>
+			</fieldset>
+		</div>
+		<div class="survey-footer survey-footer-single ">
+			<a href='/survey2.html' class="signup-button survey-footer-button-continue">Continue</a>
+		</div>
+	</div>
+	<script type="module" src="/main.js"></script>
+</body>
+</html>
