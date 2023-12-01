@@ -68,6 +68,20 @@ a {
 		color: #C1C1C1;
 	}
 }
+.a-button {
+	text-decoration: none;
+}
+.skip {
+	font-family: DM Sans;
+	font-size: 9px;
+	font-weight: 400;
+	line-height: 13px;
+	letter-spacing: 0px;
+	text-align: center;
+	color: #828486;
+	position: absolute;
+	bottom: -25px;
+}
 .container {
 	display: flex;
 	justify-content: center;
@@ -186,6 +200,7 @@ a {
 .signup-button {
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
 	min-height: 40px;
 	border-radius: 6px;
 	display: flex;
@@ -463,6 +478,7 @@ $black-survey: #171717;
 		text-decoration: inherit;
 	}
 	&-wrapper {
+		position: relative;
 		background-color: #fff;
 		padding: 10px;
 		@media (min-width: 480px) {
