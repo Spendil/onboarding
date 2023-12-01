@@ -6,51 +6,53 @@
 	<title>Document</title>
 </head>
 <body>
-	<form class="survey survey-wrapper" style="--part: 5">
-		<div class="survey-header">
-			<div class="survey-header-count">
-				<span class="survey-header-count-current">5</span>
-				<span class="survey-header-count-total">/5</span>
+	<div class="container">
+		<form class="survey survey-wrapper" style="--part: 5">
+			<div class="survey-header">
+				<div class="survey-header-count">
+					<span class="survey-header-count-current">5</span>
+					<span class="survey-header-count-total">/5</span>
+				</div>
+				<div class="survey-header-title">
+					Contact
+				</div>
 			</div>
-			<div class="survey-header-title">
-				Contact
-			</div>
-		</div>
-		<div class="survey-body">
-			<div class="onboarding-input survey-body-item survey-body-item-company-size">
-				<label htmlFor="company-size-selector">How did you hear about Bitquery?</label>
-				<select name="company-size" id="company-size-selector" class='onboarding-select'>
-					<option value="Google" selected>Google</option>
-					<option value="Article">Article</option>
-					<option value="Social Media">Social Media</option>
-					<option value="Word of mouth">Word of mouth</option>
-					<option value="Other">Other, please specify</option>
-				</select>
-			</div>
-			<!-- {/* if Other selected - show "hearabout" input below */} -->
-			<div class="onboarding-input survey-body-item survey-body-item-hearabout">
-				<input type="text" id='hearabout' placeholder='How did you hear about Bitquery?' />
-			</div>
-			<label class='outlabel' htmlFor="contact">Where should we reach out to you?</label>
-			<div class="survey-body-item survey-body-item-contact">
-				<div class="onboarding-input survey-body-item survey-body-item-contact">
-					<select name="contact" id="contact" class='onboarding-select'>
-						<option value="Telegram" selected>Telegram</option>
-						<option value="Discord">Discord</option>
-						<option value="Phone">Phone</option>
-						<option value="Email">Email</option>
+			<div class="survey-body">
+				<div class="onboarding-input survey-body-item survey-body-item-company-size">
+					<label htmlFor="company-size-selector">How did you hear about Bitquery?</label>
+					<select name="company-size" id="company-size-selector" class='onboarding-select'>
+						<option value="Google" selected>Google</option>
+						<option value="Article">Article</option>
+						<option value="Social Media">Social Media</option>
+						<option value="Word of mouth">Word of mouth</option>
+						<option value="Other">Other, please specify</option>
 					</select>
 				</div>
-				<div class="onboarding-input survey-body-item survey-body-item-contact-input">
-					<input type="text" id='inputcontact' placeholder='Share your contact...' />
+				<!-- {/* if Other selected - show "hearabout" input below */} -->
+				<div class="onboarding-input survey-body-item survey-body-item-hearabout">
+					<input type="text" id='hearabout' placeholder='How did you hear about Bitquery?' />
+				</div>
+				<label class='outlabel' htmlFor="contact">Where should we reach out to you?</label>
+				<div class="survey-body-item survey-body-item-contact">
+					<div class="onboarding-input survey-body-item survey-body-item-contact">
+						<select name="contact" id="contact" class='onboarding-select'>
+							<option value="Telegram" selected>Telegram</option>
+							<option value="Discord">Discord</option>
+							<option value="Phone">Phone</option>
+							<option value="Email">Email</option>
+						</select>
+					</div>
+					<div class="onboarding-input survey-body-item survey-body-item-contact-input">
+						<input type="text" id='inputcontact' placeholder='Share your contact...' />
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="survey-footer survey-footer-multi">
-			<a href='/survey4.html' class="signup-button survey-footer-button-back">Back</a>
-			<button type="submit" class="signup-button survey-footer-button-continue">Submit</button>
-		</div>
-	</form>
+			<div class="survey-footer survey-footer-multi">
+				<a href='/survey4.html' class="signup-button survey-footer-button-back">Back</a>
+				<button type="submit" class="signup-button survey-footer-button-continue">Submit</button>
+			</div>
+		</form>
+	</div>
 	<script type="module" src="/main.js"></script>
 </body>
 </html>

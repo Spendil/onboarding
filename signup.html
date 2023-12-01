@@ -6,51 +6,53 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="login wrapper">
-		<div class="front-pic">
-			<div class="pic-container">
-				<img src='./public/grpTaglineBranding.png' alt="front-pic" />
-			</div>
-		</div>
-		<div class="create-account">
-			<h2 class='title'>Create your account</h2>
-			<button class='signup-button signup-with-google'>
-				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M15.8419 8.18398C15.8419 7.64017 15.7978 7.09341 15.7037 6.55841H8.15784V9.63906H12.479C12.2997 10.6326 11.7235 11.5116 10.8799 12.0701V14.069H13.4579C14.9717 12.6756 15.8419 10.6179 15.8419 8.18398Z" fill="#4285F4" />
-					<path d="M8.15822 16.0001C10.3159 16.0001 12.1354 15.2917 13.4612 14.0689L10.8832 12.07C10.1659 12.5579 9.23997 12.8342 8.16116 12.8342C6.07407 12.8342 4.30446 11.4262 3.66951 9.53313H1.00922V11.5938C2.36729 14.2952 5.13341 16.0001 8.15822 16.0001Z" fill="#34A853" />
-					<path d="M3.6665 9.53342C3.33139 8.53985 3.33139 7.46397 3.6665 6.4704V4.40977H1.00914C-0.125525 6.67029 -0.125525 9.33353 1.00914 11.594L3.6665 9.53342Z" fill="#FBBC04" />
-					<path d="M8.15822 3.16635C9.29876 3.14871 10.4011 3.57789 11.2271 4.36569L13.5111 2.08165C12.0649 0.723578 10.1454 -0.0230689 8.15822 0.000447558C5.13341 0.000447558 2.36729 1.70539 1.00922 4.40978L3.66657 6.47041C4.29858 4.5744 6.07113 3.16635 8.15822 3.16635Z" fill="#EA4335" />
-				</svg>
-				Sign up with Google
-			</button>
-			<div class="ortitle">
-				<span class='ortitle-title'>Or, sign up with your email</span>
-			</div>
-			<form class='signup'>
-				<div class="onboarding-input signup-input">
-					<label htmlFor="email-input">Email address*</label>
-					<input type="text" id='email-input' placeholder='Enter your email' autoFocus />
+	<div class="container">
+		<div class="login wrapper">
+			<div class="front-pic">
+				<div class="pic-container">
+					<img src='./public/grpTaglineBranding.png' alt="front-pic" />
 				</div>
-				<div class="onboarding-input signup-input">
-					<label htmlFor="password-input">Password*</label>
-					<div class='p-wrapper'>
-						<input type="password" id='password-input' placeholder='Enter your password' />
-						<span class="p-viewer"> <!-- {/* onclick toggle input type password/text */} -->
-							<i class="bi bi-eye" aria-hidden="true"></i>
-						</span>
+			</div>
+			<div class="create-account">
+				<h2 class='title'>Create your account</h2>
+				<button class='signup-button signup-with-google'>
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.8419 8.18398C15.8419 7.64017 15.7978 7.09341 15.7037 6.55841H8.15784V9.63906H12.479C12.2997 10.6326 11.7235 11.5116 10.8799 12.0701V14.069H13.4579C14.9717 12.6756 15.8419 10.6179 15.8419 8.18398Z" fill="#4285F4" />
+						<path d="M8.15822 16.0001C10.3159 16.0001 12.1354 15.2917 13.4612 14.0689L10.8832 12.07C10.1659 12.5579 9.23997 12.8342 8.16116 12.8342C6.07407 12.8342 4.30446 11.4262 3.66951 9.53313H1.00922V11.5938C2.36729 14.2952 5.13341 16.0001 8.15822 16.0001Z" fill="#34A853" />
+						<path d="M3.6665 9.53342C3.33139 8.53985 3.33139 7.46397 3.6665 6.4704V4.40977H1.00914C-0.125525 6.67029 -0.125525 9.33353 1.00914 11.594L3.6665 9.53342Z" fill="#FBBC04" />
+						<path d="M8.15822 3.16635C9.29876 3.14871 10.4011 3.57789 11.2271 4.36569L13.5111 2.08165C12.0649 0.723578 10.1454 -0.0230689 8.15822 0.000447558C5.13341 0.000447558 2.36729 1.70539 1.00922 4.40978L3.66657 6.47041C4.29858 4.5744 6.07113 3.16635 8.15822 3.16635Z" fill="#EA4335" />
+					</svg>
+					Sign up with Google
+				</button>
+				<div class="ortitle">
+					<span class='ortitle-title'>Or, sign up with your email</span>
+				</div>
+				<form class='signup'>
+					<div class="onboarding-input signup-input">
+						<label htmlFor="email-input">Email address*</label>
+						<input type="text" id='email-input' placeholder='Enter your email' autoFocus />
 					</div>
-					<div class="prompt">Must be at least 8 characters</div>
+					<div class="onboarding-input signup-input">
+						<label htmlFor="password-input">Password*</label>
+						<div class='p-wrapper'>
+							<input type="password" id='password-input' placeholder='Enter your password' />
+							<span class="p-viewer"> <!-- {/* onclick toggle input type password/text */} -->
+								<i class="bi bi-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+						<div class="prompt">Must be at least 8 characters</div>
+					</div>
+					<div class="captcha">
+						Captcha
+						<!-- {/* Captcha here */} -->
+					</div>
+					<button type="submit" class='signup-button email-signup'>Sign up</button>
+					<div class="prompt">By signing up, I agree to <a target="_blank" href="https://bitquery.io/terms_of_service">Terms and Conditions</a> & <a target="_blank" href="https://bitquery.io/privacy_policy">Privacy Policy</a></div>
+				</form>
+				<div class="another-action">
+					<span>Already have an account?</span>
+					<a href="/login.html">Log in</a>
 				</div>
-				<div class="captcha">
-					Captcha
-					<!-- {/* Captcha here */} -->
-				</div>
-				<button type="submit" class='signup-button email-signup'>Sign up</button>
-				<div class="prompt">By signing up, I agree to <a target="_blank" href="https://bitquery.io/terms_of_service">Terms and Conditions</a> & <a target="_blank" href="https://bitquery.io/privacy_policy">Privacy Policy</a></div>
-			</form>
-			<div class="another-action">
-				<span>Already have an account?</span>
-				<a href="/login.html">Log in</a>
 			</div>
 		</div>
 	</div>

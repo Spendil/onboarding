@@ -1,7 +1,25 @@
 //   Login
 $burgundy: #CA3568;
+*{
+	box-sizing: border-box;
+} 
+html, 
+body {
+    height: 100%;
+	background-color: #F8F8F8;
+}
 a {
 	color: $burgundy;
+}
+.gap-10 {
+	gap: 10px;
+}
+.container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px;
 }
 .onboarding-checkbox {
 	display: flex;
@@ -156,17 +174,23 @@ a {
 		color: #828486;
 	}
 }
+.redsquare {
+	background-color: rebeccapurple;
+	display: flex;
+}
 .login {
 	&.wrapper {
 		border-radius: 8px;
 		display: flex;
+		justify-content: center;
+		flex: 1;
 		max-width: 832px;
 		max-height: 612px;
 		background-color: #fff;
 		padding: 16px;
 		.front-pic {
 			display: none;
-			align-items: flex-start;
+			align-items: center;
 			@media (min-width: 600px) {
 				display: flex;
 			}
@@ -183,6 +207,7 @@ a {
 		.create-account {
 			display: flex;
 			flex-direction: column;
+			max-width: 400px;
 			flex-grow: 1;
 			@media (min-width: 600px) {
 				padding: 10px;
@@ -272,6 +297,8 @@ a {
 .confirm {
 	&-email-wrapper {
 		display: flex;
+		background-color: #fff;
+		flex: 1;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -340,16 +367,18 @@ a {
 	max-height: 328px;
 	padding: 40px;
 	border-radius: 16px;
-	gap: 40px;
+	background-color: #fff;
 	display: flex;
+	gap: 20px;
+	flex: 1;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	.confirmed-image {
 		background-color: $burgundy;
 		border-radius: 50%;
-		width: 135px;
-		height: 135px;
+		width: 105px;
+		height: 105px;
 		text-align: center;
 		i {
 			color: #fff;
@@ -380,6 +409,7 @@ $black-survey: #171717;
 		text-decoration: inherit;
 	}
 	&-wrapper {
+		background-color: #fff;
 		padding: 10px;
 		@media (min-width: 480px) {
 			padding: 40px;
@@ -390,6 +420,7 @@ $black-survey: #171717;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		flex: 1;
 		align-items: center;
 		flex-wrap: wrap;
 		position: relative;
