@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
@@ -17,9 +18,14 @@
 		</nav>
 		<div class="container">
 			<div class="email-confirmed-wrapper">
-				<div class="confirmed-image">
-					<i class="bi bi-check fa-6x"></i>
-				</div>
+				<lottie-player src="./public/confirmed.json"
+					background="transparent"
+					speed="1"
+					style="width: 150px; height: 150px;"
+					loop
+					autoplay
+				>
+				</lottie-player>
 				<div class="email-confirmed-message">
 					<h3>Email verified!</h3>
 					<div class="prompt">Complete the account set up process & have a personalized experience</div>
